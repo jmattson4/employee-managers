@@ -4,9 +4,18 @@
       "bytes": 8604,
       "imports": []
     },
-    "js/dashboard/api/index.js": {
-      "bytes": 1017,
+    "js/utils/env.js": {
+      "bytes": 190,
       "imports": []
+    },
+    "js/dashboard/api/index.js": {
+      "bytes": 984,
+      "imports": [
+        {
+          "path": "js/utils/env.js",
+          "kind": "import-statement"
+        }
+      ]
     },
     "js/utils/dataFetcher.js": {
       "bytes": 887,
@@ -198,8 +207,11 @@
       "exports": [],
       "entryPoint": "js/dashboard/index.js",
       "inputs": {
+        "js/utils/env.js": {
+          "bytesInOutput": 47
+        },
         "js/dashboard/api/index.js": {
-          "bytesInOutput": 287
+          "bytesInOutput": 428
         },
         "js/utils/dataFetcher.js": {
           "bytesInOutput": 361
@@ -208,25 +220,25 @@
           "bytesInOutput": 674
         },
         "js/dashboard/sidebar/sideBarTemplates.js": {
-          "bytesInOutput": 124
+          "bytesInOutput": 125
         },
         "js/utils/renderToElement.js": {
           "bytesInOutput": 100
         },
         "js/dashboard/sidebar/sideBarOptions.js": {
-          "bytesInOutput": 36
+          "bytesInOutput": 37
         },
         "_snowpack/pkg/ejs.js": {
-          "bytesInOutput": 13618
+          "bytesInOutput": 13624
         },
         "js/utils/renderTemplate.js": {
           "bytesInOutput": 55
         },
         "js/dashboard/sidebar/sideBarOption.js": {
-          "bytesInOutput": 253
+          "bytesInOutput": 254
         },
         "js/dashboard/sidebar/index.js": {
-          "bytesInOutput": 152
+          "bytesInOutput": 153
         },
         "js/dashboard/widgets/manager/managerTemplates.js": {
           "bytesInOutput": 413
@@ -247,7 +259,7 @@
           "bytesInOutput": 278
         }
       },
-      "bytes": 18832
+      "bytes": 19030
     }
   }
 }
