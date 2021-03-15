@@ -1,7 +1,7 @@
 //change this to Prod to change the api routes.
 const ENV = 'Prod';
 const DEV_URL = 'http://localhost:5000/api'
-const PROD_URL = 'https://employee-managers-frontend-dev.herokuapp.com/';
+const PROD_URL = 'https://employee-managers-frontend-dev.herokuapp.com/api';
 
 
 export { 
